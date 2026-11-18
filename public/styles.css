@@ -1,0 +1,16 @@
+* { box-sizing: border-box; }
+body { font-family: system-ui, sans-serif; margin: 0; background: #f4f6fb; color: #1b1f2a; }
+main { max-width: 460px; margin: 2rem auto; background: #fff; padding: 1.5rem 2rem; border-radius: 12px; box-shadow: 0 4px 18px rgba(0,0,0,.06); }
+h1 { margin-top: 0; font-size: 1.5rem; }
+.field { display: grid; gap: .3rem; margin-bottom: 1rem; }
+.field.checkbox { grid-template-columns: auto 1fr; align-items: center; }
+.field.checkbox .error { grid-column: 1 / -1; }
+label { font-weight: 600; font-size: .95rem; }
+input, select { padding: .55rem; border: 1px solid #8a94a6; border-radius: 6px; font-size: 1rem; }
+input[aria-invalid="true"], select[aria-invalid="true"] { border-color: #b42318; }
+.hint { margin: 0; color: #4b5565; font-size: .85rem; }
+.error { margin: 0; color: #b42318; font-size: .85rem; min-height: 1em; }
+.meter { height: 6px; background: #e6e9f0; border-radius: 3px; overflow: hidden; }
+.meter span { display: block; height: 100%; width: 0; background: #b42318; transition: width .2s; }
+button { width: 100%; padding: .7rem; border: 0; border-radius: 6px; background: #2f4ad0; color: #fff; font-size: 1rem; cursor: pointer; }
+button:focus-visible, input:focus-visible, select:focus-visible { outline: 3px solid #ffb703; outline-offset: 2px; }

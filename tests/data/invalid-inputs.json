@@ -1,0 +1,16 @@
+[
+  { "field": "fullName", "value": "", "error": "Full name is required" },
+  { "field": "fullName", "value": "A", "error": "Full name must be at least 2 characters" },
+  { "field": "fullName", "value": "R2-D2", "error": "Full name can only contain letters, spaces, hyphens and apostrophes" },
+  { "field": "email", "value": "", "error": "Email is required" },
+  { "field": "email", "value": "ada.example.com", "error": "Enter a valid email address" },
+  { "field": "email", "value": "ada@example", "error": "Enter a valid email address" },
+  { "field": "email", "value": "ada @example.com", "error": "Enter a valid email address" },
+  { "field": "email", "value": "taken@example.com", "error": "An account with this email already exists" },
+  { "field": "email", "value": "TAKEN@Example.com", "error": "An account with this email already exists" },
+  { "field": "password", "value": "", "error": "Password is required" },
+  { "field": "password", "value": "Sh0rt!", "error": "Password must be at least 8 characters" },
+  { "field": "password", "value": "lowercase1!", "error": "Password must contain an uppercase letter" },
+  { "field": "password", "value": "NoNumbers!", "error": "Password must contain a number" },
+  { "field": "password", "value": "NoSymbol123", "error": "Password must contain a symbol" }
+]
